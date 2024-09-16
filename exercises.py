@@ -14,7 +14,6 @@ def calculate_area_triangle(base, height):
 
 print('Exercise 1:', calculate_area_triangle(10, 5))
 
-
 # Exercise 2: Calculate Simple Interest
 #
 # Write a function named `simple_interest` that takes principal, rate of interest (as a percentage), and time (years).
@@ -45,7 +44,6 @@ print('Exercise 2:', simple_interest(1000, 5, 2))
 def apply_discount(price, percentage):
     discount_amount = ((price) * (percentage/100)) 
     return price - discount_amount
-
 
 print('Exercise 3:', apply_discount(100, 25))
 
@@ -109,3 +107,16 @@ print('Exercise 6:', largest(1, 2, 3))
 print('Exercise 6:', largest(28, 111, 14))
 
 
+# Exercise 7: Calculate a Tip
+#
+# Create a function called `calculate_tip`. It should take the bill amount and the tip percentage (as a whole number).
+# The function should return the amount of the tip.
+#
+# Examples:
+# calculate_tip(50, 20) should return 10.
+#
+# Write your function and test its output below.
+
+def calculate_tip(bill, percentage):
+    return (percentage/100) * bill
+print('Exercise 7:', calculate_tip(50, 20))
